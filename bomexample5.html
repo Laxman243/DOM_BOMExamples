@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The Navigator Object</h2>
+
+<p>The javaEnabled() method returns true if Java is enabled:</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"javaEnabled is " + navigator.javaEnabled() + "information about browser : <br>" + navigator.appVersion + "<br>"
++"Application name of the browser <br> " +navigator.appName + "<br>" + "product name of browser engine <br>" + navigator.product +
+"<b>" + "user agen header sent by browser to server : <br>" + navigator.userAgent;
+</script>
+
+</body>
+</html>

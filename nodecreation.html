@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <div id="div1">
+            <p id = "id1">P First</p>
+            <p id = "id2">P second</p>
+            <p id = "id3">P third</p>
+        </div>
+        <script>
+            
+            var para = document.createElement("p");
+            var node = document.createTextNode("this is new paragraph");
+            para.appendChild(node);
+
+          /* var element = document.getElementById("div1");
+           var child = document.getElementById("id2");
+           element.insertBefore(para,child);
+*/
+           var parent = document.getElementById("div1");
+            var child = document.getElementById("id3");
+            //parent.removeChild(child);
+            parent.replaceChild(para, child);
+         </script>
+    </body>
+</html>

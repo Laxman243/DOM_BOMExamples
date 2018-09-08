@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <p> Event Listeners <b>Dont use prefix 'on' use 'click' instead 'onlick'</b> : example </p>
+    <button id ="btn">Try it! </button>
+
+    <p id = "demo"></p>
+    <script>
+        document.getElementById('btn').addEventListener("click",DisplyDate)
+        function DisplyDate()
+        {
+            document.getElementById("demo").innerHTML = Date();
+        }
+        </script>
+</body>
+</html>

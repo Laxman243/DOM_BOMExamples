@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"> </p>
+    <h1 onclick="document.getElementById('demo').innerHTML = 'oops!'">Clikc Over Me</h1>
+    <h2 onclick="this.innerHTML = 'oops !!'">Click here</h2>
+    
+    <!-- 
+        using function call perform event 
+    -->
+
+    <h3>Function Call </h3>
+    <h2 onclick="functioncall(this)">click here</h2>
+    <h5>Assign Event to HTML Attribute</h5>
+   <h1> <button onclick="display()">Check Date</button> </h1>
+    <script>
+        function functioncall(str)
+        {
+            str.innerHTML = "Greetings...!";
+        }
+        function display()
+        {
+            document.getElementById('demo').innerHTML = Date();
+        }
+        function btnclick()
+        {
+            document.getElementById('btn').innerHTML = Date();
+        }
+        </script>
+        <!--Assign Events to HTML DOM -->
+        <h5>Assign Event to HTML DOM</h5>
+        <button id = "btn" onclick="btnclick()">ClickMe</button>
+
+</body>
+</html>

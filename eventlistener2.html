@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <h3>many addEventListener to one element</h3>
+        <button id = "btn">Try !</button>
+        <script>
+            var x = document.getElementById('btn');
+            x.addEventListener('click',myfun1,true);
+            x.addEventListener('click',myfun2,false);
+
+            function myfun1()
+            {
+                alert("myfun1()");
+            }
+            function myfun2()
+            {
+                alert("myfun2()");
+            }
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,17 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h3>Javascript DOM Collection</h3>
+        <p>First</p>
+        <p>Second</p>
+        <p>Third</p>
+
+        <p id ="demo"></p>
+        <script>
+            var mycollection = document.getElementsByTagName('p');
+            document.getElementById("demo").innerHTML = mycollection[0].innerHTML;
+        </script>
+    </body>
+</html>

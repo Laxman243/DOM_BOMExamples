@@ -1,0 +1,14 @@
+<html>
+    <body>
+            <p>A script on this page starts this clock:</p>
+        <p id = "demo"></p>
+        <script>
+            var a = setInterval(myfunc , 2000);
+            function myfunc()
+            {
+            var a = new Date();
+             document.getElementById("demo").innerHTML = a.toLocaleTimeString();
+            }
+            </script>
+        </body>
+</html>

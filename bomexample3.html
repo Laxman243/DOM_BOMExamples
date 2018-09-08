@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript</h2>
+
+<h3>The window.location object</h3>
+
+<p id="demo"></p>
+
+<p><b>Note: </b>If the port number is default (80 for http and 443 for https), most browsers will display 0 or nothing.</p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+"The URL port number of the current page is: <br>" + window.location.port + "<br>"
++ "href <br>" + window.location.href + "<br>" + "domain name of current page : <br>" + window.location.hostname + "<br>"
++ "path and file name <br>:" + window.location.pathname + "<br>" + "protocol <br>" + window.location.protocol;
+</script>
+
+</body>
+</html>
